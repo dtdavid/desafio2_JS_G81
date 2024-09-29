@@ -1,0 +1,118 @@
+* {margin: 0; padding: 0;}
+*, *::before, *::after {box-sizing: border-box;}
+body {min-height: 100vh; font-size: 14px; font-family: Arial, Helvetica, sans-serif;}
+p {text-wrap: pretty;}
+h1, h2, h3, h4, h5, h6 { text-wrap: balance; font-family:'Courier New', Courier, monospace;}
+body {
+    margin: 0 auto;
+}
+
+.encabezado {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+ul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+}
+ul li {
+    padding: 5px 10px;
+    border-radius: 2px;
+    background-color: #1f2b44;
+    color: white;
+    list-style: none;
+    font-size: 1.1rem;
+    display: flex;
+}
+a:link, a:active, a:visited {
+    text-decoration: none;
+    color: white;
+}
+.card {
+    grid-area: card;
+    width: 90vw;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 3%;
+}
+header, h1 {
+    text-align: center; 
+    width: 100%;
+    padding: 2px ;
+    color: #1f2b44;
+}
+figure {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+figure img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+figcaption {
+    padding: 2px;
+    color: #1f2b44;
+    font-size: 1.2rem;
+}
+.container {
+    display: grid;
+    align-content: space-around;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "header"
+    "card"
+    ;
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    background-color: #acbcb7;
+    height: 100vh;
+}
+@media (width: 400px) {
+    .card {
+        max-height: 600px;
+    }
+    figure {
+        width: 90%;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border: 2px solid red;
+    }
+}
+@media (min-width: 630px) {
+    .card {
+        width: 75vw;
+        max-height: 700px;
+    }
+    figure {
+        width: 60%;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border: 2px solid red;
+    }
+}

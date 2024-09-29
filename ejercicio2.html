@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 2 - Ejercicicio 2</title>
+    <link rel="stylesheet" href="./assets/css/style2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="encabezado">
+        <ul>
+          <li><a href="./index.html">Ejercicio 1</a></li>
+          <li><a href="./ejercicio2.html">Ejercicio 2</a></li>
+          <li><a href="./ejercicio3.html">Ejercicio 3</a></li>
+        </ul>
+      </header>
+      <section class="card">
+        <header>
+          <h1>Puedes llevar hasta 10 stickers en total</h1>
+        </header>
+        <article class="galeria">
+          <figure>
+            <img src="./assets/img/Eevee.jpg" alt="Eevee" class="eevee" />
+            <input
+              type="number"
+              name="num"
+              id="number1"
+              class="number"
+              min="0"
+              max="10"
+              placeholder="0"
+            />
+          </figure>
+          <figure>
+            <img
+              src="./assets/img/Bulbasaur.jpg"
+              alt="Bulbasaur"
+              class="bulbasaur"
+            />
+            <input
+              type="number"
+              name="num"
+              id="number2"
+              class="number"
+              min="0"
+              max="10"
+              placeholder="0"
+            />
+          </figure>
+          <figure>
+            <img
+              src="./assets/img/./Squirtle.jpg"
+              alt="Squirtle"
+              class="squirtle"
+            />
+            <input
+              type="number"
+              name="num"
+              id="number3"
+              class="number"
+              min="0"
+              max="10"
+              placeholder="0"
+            />
+          </figure>
+        </article>
+      </section>
+      <footer class="footer">
+        <p class="footer_text">Llevas 0 stickers</p>
+        <button class="footer_btn">Verificar</button>
+      </footer>
+    </div>
+    <script src="./assets/js/stickers.js"></script>
+  </body>
+</html>
