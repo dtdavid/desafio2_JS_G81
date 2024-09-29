@@ -1,6 +1,7 @@
 
 
 const btn = document.querySelector("#ingresar")
+
 let texto = document.querySelector("#texto")
 
 btn.addEventListener("click", ()=>{
